@@ -28,7 +28,7 @@ class Solver:
         if n < 2:
             return []
 
-        if len(self.workers) == 0:
+        if len(self.workers) == 1:
             return self.sequential_sieve(n)
 
         sqrt_n = int(n ** 0.5) + 1
